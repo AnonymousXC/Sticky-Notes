@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <script src="./src/scripts/renderer.js"></script>
+</head>
+<body>
+
+    <div id="settings-panel", onmouseup="hid_settings()">
+        <div id="colors">
+            <button id="e6b904", class="color-btn"></button><button id="x65ba5a" class="color-btn"></button><button id="ea86c2" class="color-btn"></button><button id="b07fe0" class="color-btn"></button><button id="x59c0e7"class="color-btn"></button><button id="x989898" class="color-btn"></button><button id="x444444" class="color-btn"></button>
+        </div>
+    </div>
+
+    <div id="bar", class="draggable">
+        <button id="close", class="non-draggable", onclick="close_window()">&#x2715</button>
+        <button id="setting", class="non-draggable", onclick="toggle_setting()"><b>...</b></button>
+        <button id="add-win", class="non-draggable", onclick="new_win()">&#43</button>
+        <button id="on-top" class="non-draggable", onclick="on_top()">&#10138</button>
+        <button id="down-btn", class="non-draggable", onclick="not_on_top()">&#10136</button>
+    </div>
+    <div id="textbox", contenteditable="true">
+    </div>
+    <div class="bottom-box"></div>
+    <div class="bottom-box", id="bottom-bar-real">
+        <button id="bold", class="bottom-btn", onclick="bold_txt()"> <b>B</b> </button>
+        <button class="bottom-btn"> <i>I</i> </button>
+        <button class="bottom-btn"> <u>U</u> </button>
+        <button class="bottom-btn"> <strike>ab</strike> </button>
+    </div>
+
+</body>
+</html>

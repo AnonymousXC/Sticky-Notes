@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none !important;
+}
+
+body {
+    background-color: transparent;
+}
+
+#bar {
+    background-color: rgba(230,185,5,255);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: fixed;
+    width: 100%;
+    height: 33px;
+}
+
+#close {
+    position: absolute;
+    background-color: transparent;
+    border-top-right-radius: 15px;
+    border: none;
+    width: 33px;
+    height: 33px;
+    right: 0;
+    top: 0;
+    font-weight: 900;
+}
+
+#close:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#close:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#textbox {
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(51,51,51,255);
+    left: 0;
+    right: 0;
+    top: 33px;
+    bottom: 33px;
+    outline: none !important;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+
+#add-win{
+    background-color: transparent;
+    border-top-left-radius: 15px;
+    width: 33px;
+    height: 33px;
+    border: none;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+#add-win:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#add-win:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.draggable {
+    -webkit-app-region: drag;
+}
+
+.non-draggable{
+    -webkit-app-region: none;
+}
+
+.bottom-box {
+    background-color: rgba(51,51,51,255);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    border-top: solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-width: 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer !important;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+*:hover::-webkit-scrollbar {
+    width: 15px;
+}
+
+.bottom-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 3px;
+    height: 26px;
+    width: 25px;
+}
+
+.bottom-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#on-top {
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+}
+
+#on-top:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#on-top:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#down-btn {
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+}
+
+#down-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#down-btn:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#setting {
+    position: absolute;
+    background-color: transparent;
+    height: 33px;
+    width: 33px;
+    right: 33px;
+    font-size: 18px;
+    border: none;
+}
+
+#setting:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#setting:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#settings-panel {
+    top: -300px;
+    position: fixed;
+    display: block;
+    background-color: rgba(59,59,59,1);
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#colors {
+    width: 100%;
+    height: 45%;
+    background-color: rosybrown;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.color-btn {
+    position: relative;
+    width: 14.28%;
+    height: 100%;
+    border: none;
+}
+
+#e6b904 {
+    background-color: #e6b904;
+    border-top-left-radius: 15px;
+}
+
+#x65ba5a {
+    background-color: #65ba5a;
+}
+
+#ea86c2 {
+    background-color: #ea86c2;
+}
+
+#b07fe0 {
+    background-color: #b07fe0;
+}
+
+#x59c0e7 {
+    background-color: #59c0e7;
+}
+
+#x989898 {
+    background-color: #989898;
+}
+
+#x444444 {
+    background-color: #444444;
+    border-top-right-radius: 15px;
+}
