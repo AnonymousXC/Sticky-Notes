@@ -185,7 +185,7 @@ body {
 }
 
 #settings-panel {
-    top: -300px;
+    top: -600px;
     position: fixed;
     display: block;
     background-color: rgba(59,59,59,1);
@@ -239,4 +239,35 @@ body {
 #x444444 {
     background-color: #444444;
     border-top-right-radius: 15px;
+}
+
+#list {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    height: 27.5%;
+    position: absolute;
+    color: white;
+    padding-left: 15px;
+    text-align: left;
+}
+
+#list:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#del {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 73%;
+    height: 27.5%;
+    border: none;
+    text-align: left;
+    padding-left: 15px;
+    color: white;
+}
+
+#del:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }

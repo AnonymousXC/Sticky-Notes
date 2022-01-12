@@ -1,4 +1,5 @@
 const {ipcRenderer} = require('electron');
+const path = require('path');
 
 
 function close_window() {
@@ -30,6 +31,13 @@ function toggle_setting() {
 function hid_settings() {
     const settings_panel = document.getElementById('settings-panel');
     settings_panel.style.top = "-300px";
+}
+
+function change_color(t) {
+    var color = "#" + t.id;
+    color = color.replace("x", "");
+    const bar = document.getElementById("bar");
+    bar.style.backgroundColor = color;
 }
 
 function blurred_mode() {

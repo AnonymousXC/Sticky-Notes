@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/main.css">
-    <script src="./src/scripts/renderer.js"></script>
+    <script src="./src/scripts/renderer.js" type="text/javascript" ></script>
+    <script src="./src/scripts/python.js", type="text/javascript"></script>
 </head>
 <body>
 
     <div id="settings-panel", onmouseup="hid_settings()">
         <div id="colors">
-            <button id="e6b904", class="color-btn"></button><button id="x65ba5a" class="color-btn"></button><button id="ea86c2" class="color-btn"></button><button id="b07fe0" class="color-btn"></button><button id="x59c0e7"class="color-btn"></button><button id="x989898" class="color-btn"></button><button id="x444444" class="color-btn"></button>
+            <button id="e6b904", class="color-btn", onclick="change_color(this)"></button><button id="x65ba5a" class="color-btn", onclick="change_color(this)"></button><button id="ea86c2" class="color-btn" , onclick="change_color(this)"></button><button id="b07fe0" class="color-btn", onclick="change_color(this)"></button><button id="x59c0e7"class="color-btn", onclick="change_color(this)"></button><button id="x989898" class="color-btn", onclick="change_color(this)"></button><button id="x444444" class="color-btn", onclick="change_color(this)"></button>
+        </div>
+        <div id="btn">
+            <button id="list">Notes Lists</button> <br>
+            <button id="del">Delete Note</button>
         </div>
     </div>
 
@@ -26,7 +31,7 @@
     </div>
     <div class="bottom-box"></div>
     <div class="bottom-box", id="bottom-bar-real">
-        <button id="bold", class="bottom-btn", onclick="bold_txt()"> <b>B</b> </button>
+        <button id="bold", class="bottom-btn", onclick="bold_text()"> <b>B</b> </button>
         <button class="bottom-btn"> <i>I</i> </button>
         <button class="bottom-btn"> <u>U</u> </button>
         <button class="bottom-btn"> <strike>ab</strike> </button>
