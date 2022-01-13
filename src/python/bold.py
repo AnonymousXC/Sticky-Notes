@@ -20,4 +20,5 @@ def bolded(sel_txt, text):
         f_txt = text.replace(sel_txt, bolded)
     return f_txt
 
-print(bolded(sel, txt))
+if sel and txt:
+    print(bolded(sel, txt))
